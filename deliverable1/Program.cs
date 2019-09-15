@@ -27,24 +27,20 @@ namespace deliverable1
             total = Totalnumber1 + Totalnumber2 + Totalnumber3;
             average = total / 3;
 
+            //Convert from double to decimal using explicit convention
             decimal userInput = (decimal)Totalnumber1;
             userInput = 0.00M;
+            userInput = Convert.ToDecimal(total);
 
             //Console.WriteLine("Total: " + total);
             Console.WriteLine("The Average: " + average);
-            Console.WriteLine(" The Smallest Amount: " + Math.Min(Totalnumber1, Math.Min(Totalnumber2, Totalnumber3)));
+            Console.WriteLine("The Smallest Amount: " + Math.Min(Totalnumber1, Math.Min(Totalnumber2, Totalnumber3)));
             Console.WriteLine("The Largest Amount: " + Math.Max(Totalnumber1, Math.Max(Totalnumber2, Totalnumber3)));
             Console.ReadLine();
 
-            userInput = Convert.ToDecimal(total);
-
-            //Console.WriteLine(userInput.ToString("C"));
             Console.WriteLine("US: " + userInput.ToString("C"));
-
             Console.WriteLine("Swedish: " + userInput.ToString("C", CultureInfo.CreateSpecificCulture("sv-SE")));
-
             Console.WriteLine("Japanese: " + userInput.ToString("C", CultureInfo.CreateSpecificCulture("ja-JP")));
-
             Console.WriteLine("Thai: " + userInput.ToString("C", CultureInfo.CreateSpecificCulture("th-TH")));
             Console.ReadLine();
         }
