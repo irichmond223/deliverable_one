@@ -30,10 +30,10 @@ namespace deliverable1
             decimal userInput = (decimal)Totalnumber1;
             userInput = 0.00M;
 
-            Console.WriteLine("Total: " + total);
-            Console.WriteLine("Average number: " + average);
-            Console.WriteLine("Smallest number: " + Math.Min(Totalnumber1, Math.Min(Totalnumber2, Totalnumber3)));
-            Console.WriteLine("Largest number: " + Math.Max(Totalnumber1, Math.Max(Totalnumber2, Totalnumber3)));
+            //Console.WriteLine("Total: " + total);
+            Console.WriteLine("The Average: " + average);
+            Console.WriteLine(" The Smallest Amount: " + Math.Min(Totalnumber1, Math.Min(Totalnumber2, Totalnumber3)));
+            Console.WriteLine("The Largest Amount: " + Math.Max(Totalnumber1, Math.Max(Totalnumber2, Totalnumber3)));
             Console.ReadLine();
 
             userInput = Convert.ToDecimal(total);
